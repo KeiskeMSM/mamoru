@@ -1,0 +1,67 @@
+#work-life {
+  background-color: cl(d-blue);
+  .inner {
+    width: 1000px;
+    margin: 0 auto;
+    padding: 70px 0 130px;
+    height: 700px;
+    color: cl(white);
+    @include mediaTAB {
+      width: 80vw;
+      padding: 5vw 0 10vw;
+      height: 60vw;
+    }
+    @include mediaSP {
+      padding: 30vw 0 20vw;
+      width: 100%;
+      height: 200vw;
+    }
+    h2 {
+      font-size: 4rem;
+      font-weight: bold;
+      line-height: 1.2;
+      margin-bottom: 80px;
+      @include mediaTAB {
+        font-size: 3vw;
+        margin-bottom: 6vw;
+      }
+      @include mediaSP {
+        font-size: 6vw;
+        margin-bottom: 10vw;
+        letter-spacing: 0.5vw;
+      }
+    }
+    .text {
+      text-align: left;
+      line-height: 2;
+      font-size: 1.6rem;
+      padding-top: 30px;
+      padding-left: 500px;
+      width: 900px;
+      height: 300px;
+      box-sizing: border-box;
+      background-image: url(../img/work-life.png);
+      background-size: 400px auto;
+      background-position: 0 0;
+      background-repeat: no-repeat;
+      @include mediaTAB {
+        padding-top: 2.5vw;
+        padding-left: 40vw;
+        width: 70vw;
+        height: 25vw;
+        font-size: 1.5vw;
+        background-size: 30vw auto;
+      }
+      @include mediaSP {
+        margin: 0 auto;
+        padding: 70vw 10% 0;
+        width: 80%;
+        height: auto;
+        font-size: 3.5vw;
+        line-height: 2;
+        background-size: 80vw auto;
+        background-position: -30px 0;
+      }
+    }
+  }
+}

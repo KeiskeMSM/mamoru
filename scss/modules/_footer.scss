@@ -1,0 +1,12 @@
+footer {
+  background-color: cl(blue);
+  .copy {
+    padding: 8px 0;
+    font-size: 1.2rem;
+    color: cl(white);
+    @include mediaTAB {
+      padding: 0.5vw 0;
+      font-size: 2vw;
+    }
+  }
+}

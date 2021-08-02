@@ -1,0 +1,99 @@
+#faq {
+  background-color: cl(grey);
+  .inner {
+    padding: 100px 0;
+    @include mediaTAB {
+      padding: 8vw 0;
+    }
+    @include mediaSP {
+      padding: 30vw 0 24vw;
+    }
+    h2 {
+      margin-bottom: 50px;
+      font-size: 3rem;
+      line-height: 1;
+      @include mediaTAB {
+        margin-bottom: 4vw;
+        font-size: 3vw;
+        line-height: 1;
+      }
+      @include mediaSP {
+        margin-bottom: 10vw;
+        font-size: 7vw;
+      }
+    }
+    .faq-list {
+      width: 640px;
+      margin: 0 auto;
+      font-size: 1.3rem;
+      @include mediaTAB {
+        width: 50vw;
+        font-size: 1.3vw;
+      }
+      @include mediaSP {
+        margin: 0 auto;
+        width: 80vw;
+      }
+      .faq-item {
+        margin-bottom: 30px;
+        padding: 30px;
+        border-radius: 16px;
+        font-weight: bold;
+        text-align: left;
+        background-color: cl(white);
+        cursor: pointer;
+        @include mediaTAB {
+          margin-bottom: 2.5vw;
+          padding: 2.5vw;
+          border-radius: 1.5vw;
+          font-weight: bold;
+          text-align: left;
+        }
+        @include mediaSP {
+          margin-bottom: 4vw;
+          padding: 6vw;
+          font-size: 3vw;
+        }
+        dt {
+          padding-right: 50px;
+          position: relative;
+          &::after {
+            content: "";
+            display: block;
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 15px;
+            height: 10px;
+            background-image: url(../img/arrow.png);
+            background-size: 100% auto;
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            transition: 0.5s ease;
+            transform: rotateX(180deg);
+          }
+          &.active {
+            &::after {
+              transform: rotateX(0deg);
+              transition: 0.5s ease;
+            }
+          }
+
+          @include mediaTAB {
+            padding-right: 3.75vw;
+          }
+        }
+        .detail {
+          display: none;
+          margin-top: 30px;
+          padding: 30px;
+          background-color: cl(grey);
+          @include mediaTAB {
+            margin-top: 2.5vw;
+            padding: 2.5vw;
+          }
+        }
+      }
+    }
+  }
+}

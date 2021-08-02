@@ -1,0 +1,48 @@
+#message {
+  .inner {
+    padding: 100px 0;
+    @include mediaTAB {
+      padding: 8vw 0;
+    }
+    @include mediaSP {
+      padding: 27vw 0 30vw;
+    }
+    h2 {
+      margin-bottom: 4vw;
+      font-size: 3rem;
+      color: cl(blue);
+      @include mediaTAB {
+        margin-bottom: 50px;
+        font-size: 2.5vw;
+      }
+      @include mediaSP {
+        margin-bottom: 15vw;
+        font-size: 7vw;
+      }
+    }
+    .text {
+      width: 540px;
+      font-size: 1.5rem;
+      margin: 0 auto;
+      text-align: left;
+      @include mediaTAB {
+        width: 50vw;
+        font-size: 1.5vw;
+      }
+      @include mediaSP {
+        width: 70vw;
+        font-size: 4vw;
+      }
+      p {
+        margin-bottom: 30px;
+        line-height: 2;
+        @include mediaTAB {
+          margin-bottom: 4vw;
+        }
+        @include mediaSP {
+          margin-bottom: 9vw;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,30 @@
+#copy {
+  height: 300px;
+  padding-bottom: 120px;
+  @include mediaTAB {
+    height: 20vw;
+  }
+  @include mediaSP {
+    height: 90vw;
+    padding-top: 15vw;
+  }
+  .inner {
+    background-image: url();
+    p {
+      color: cl(blue);
+      font-size: 19px;
+      font-weight: bold;
+      line-height: 3;
+      letter-spacing: 3px;
+      @include mediaTAB {
+        font-size: 1.5vw;
+        font-weight: bold;
+        letter-spacing: 0.5vw;
+      }
+      @include mediaSP {
+        font-size: 4vw;
+        letter-spacing: 1vw;
+      }
+    }
+  }
+}

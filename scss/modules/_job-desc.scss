@@ -1,0 +1,90 @@
+#job-desc {
+  .inner {
+    position: relative;
+    padding: 100px 0;
+    margin: 0 auto;
+    @include mediaTAB {
+      padding: 8vw 0;
+    }
+    @include mediaSP {
+      padding: 30vw 0;
+    }
+    h2 {
+      margin-bottom: 50px;
+      font-size: 3rem;
+      @include mediaTAB {
+        font-size: 2vw;
+        margin-bottom: 4vw;
+      }
+      @include mediaSP {
+        font-size: 6.5vw;
+        margin-bottom: 9.5vw;
+      }
+    }
+    .job-type {
+      padding-left: 500px;
+      width: 1000px;
+      height: 500px;
+      margin: 0 auto;
+      box-sizing: border-box;
+      background-image: url(../img/job-desc.jpg);
+      background-size: 460px auto;
+      background-repeat: no-repeat;
+      @include mediaTAB {
+        padding-left: 50vw;
+        width: 80vw;
+        height: 25vw;
+        margin-bottom: 2vw;
+        background-size: 35vw auto;
+        background-repeat: no-repeat;
+      }
+      @include mediaSP {
+        padding: 60vw 0 0;
+        height: 100vw;
+        background-size: 100% auto;
+      }
+      h3 {
+        width: 240px;
+        margin-bottom: 25px;
+        font-size: 20px;
+        color: cl(white);
+        background-color: cl(blue);
+        line-height: 1.5;
+        @include mediaTAB {
+          width: 20vw;
+          margin-bottom: 2vw;
+          font-size: 1.5vw;
+        }
+        @include mediaSP {
+          margin: 0 auto 5vw;
+          width: 60vw;
+          font-size: 5vw;
+          letter-spacing: 1vw;
+        }
+      }
+      .job-list {
+        @include mediaSP {
+          margin: 0 auto 9vw;
+          width: 75vw;
+        }
+        li {
+          text-align: left;
+          font-size: 1.3rem;
+          margin-bottom: 1vw;
+          @include mediaSP {
+            font-size: 4vw;
+            margin-bottom: 4vw;
+          }
+          &::before {
+            content: "●";
+            margin-right: 1vw;
+            color: cl(blue);
+            @include mediaSP {
+              margin-right: 2vw;
+            }
+          }
+        }
+      }
+    }
+  }
+}

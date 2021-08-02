@@ -1,0 +1,23 @@
+@mixin mediaSP {
+  @media print, screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin mediaTAB {
+  @media print, screen and (max-width: 1280px) {
+    @content;
+  }
+}
+
+@mixin ent-btn {
+  display: block;
+  padding: 18px 0;
+  width: 330px;
+  color: cl(white);
+  background-color: cl(red);
+  font-weight: bold;
+  font-size: 2.5rem;
+  border: 5px solid cl(white);
+  border-radius: 45px;
+}

@@ -1,0 +1,45 @@
+.top {
+  .inner {
+    position: relative;
+    margin-bottom: 10vw;
+    padding-top: 10vw;
+    height: 45vw;
+    background-image: url(../img/top.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    @include mediaSP {
+      padding: 30vw;
+      height: 140vw;
+    }
+    @include mediaSP {
+      background-image: url(../img/top_sp.png);
+      padding: 30vw 0 0 0;
+      height: 140vw;
+    }
+    img {
+      display: inline-block;
+      margin-bottom: 3vw;
+      width: 35vw;
+      @include mediaSP {
+        margin-bottom: 6vw;
+        width: 80vw;
+      }
+      @include mediaSP {
+        width: 80vw;
+        padding-top: 20vw;
+      }
+    }
+  }
+  .entry {
+    position: absolute;
+    right: 50%;
+    bottom: 0;
+    transform: translate(50%, 20%);
+    background: none;
+    @include mediaSP {
+    }
+    .ent-btn {
+      margin: 0 auto;
+    }
+  }
+}

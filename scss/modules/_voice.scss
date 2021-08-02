@@ -1,0 +1,181 @@
+#voice {
+  padding: 115px 0;
+  background-color: cl(grey);
+  @include mediaTAB {
+    padding: 9vw 0;
+  }
+  @include mediaSP {
+    padding: 30vw 0 30vw 0;
+  }
+  .inner {
+    padding: 0 50px;
+    @include mediaTAB {
+      padding: 0 4vw;
+    }
+    @include mediaSP {
+      padding: 0 10vw;
+    }
+    h2 {
+      font-size: 3rem;
+      margin-bottom: 48px;
+      @include mediaTAB {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+      }
+      @include mediaSP {
+        font-size: 7vw;
+        margin-bottom: 10vw;
+      }
+    }
+    .voice-list {
+      width: 1000px;
+      padding: 0 50px;
+      margin: 0 auto;
+      @include mediaTAB {
+        width: 80vw;
+        padding: 0 4vw;
+      }
+      @include mediaSP {
+        width: 100%;
+        padding: 0 10vw;
+      }
+      @include mediaSP {
+        padding: 0;
+      }
+      .voice-item {
+        margin-bottom: 170px;
+        padding-top: 300px;
+        position: relative;
+        background-size: 450px auto;
+        background-repeat: no-repeat;
+        @include mediaTAB {
+          margin-bottom: 18vw;
+          padding-top: 20vw;
+          background-size: 35vw auto;
+        }
+        @include mediaSP {
+          margin-bottom: 13vw;
+          padding-top: 50vw;
+          background-size: 100% auto;
+        }
+        &:nth-child(1) {
+          background-image: url(../img/voice_1.jpg);
+        }
+        &:nth-child(2) {
+          background-image: url(../img/voice_2.jpg);
+        }
+        &:nth-child(3) {
+          background-image: url(../img/voice_3.jpg);
+        }
+      }
+    }
+    .catch {
+      margin-left: 60px;
+      padding: 32px;
+      width: 340px;
+      font-size: 2rem;
+      text-align: left;
+      line-height: 2;
+      color: cl(white);
+      background-color: cl(blue);
+      @include mediaTAB {
+        margin-left: 4.5vw;
+        padding: 2.5vw;
+        width: 25vw;
+        font-size: 1.5vw;
+      }
+      @include mediaSP {
+        position: relative;
+        margin: 0 auto;
+        padding: 7vw 7vw 9vw;
+        width: auto;
+        &::after {
+          content: "";
+          background-image: url(../img/arrow_w.png);
+          background-repeat: no-repeat;
+          background-size: 4vw auto;
+          width: 4vw;
+          height: 4vw;
+          position: absolute;
+          display: block;
+          top: 50%;
+          right: 3.5vw;
+          transform: rotateX(180deg);
+          transition: 0.5s ease;
+        }
+        &.active {
+          &::after {
+            transform: rotateX(0deg);
+            transition: 0.5s ease;
+          }
+        }
+      }
+      .text {
+        margin-bottom: 8px;
+        font-size: 1.7rem;
+        @include mediaTAB {
+          margin-bottom: 1vw;
+          font-size: 2vw;
+        }
+        @include mediaSP {
+          margin-bottom: 2vw;
+          font-size: 4.5vw;
+          line-height: 1.5;
+        }
+      }
+      .status {
+        margin-bottom: 8px;
+        font-size: 1.5rem;
+        @include mediaTAB {
+          margin-bottom: 1vw;
+          font-size: 1vw;
+        }
+        @include mediaSP {
+          margin-bottom: 3vw;
+          font-size: 2.5vw;
+        }
+      }
+    }
+    .text-area {
+			@media screen and (min-width: 751px) {
+			display: block !important;//緊急措置
+			}
+      position: absolute;
+      top: 44px;
+      left: 440px;
+      padding: 70px 55px;
+      width: 470px;
+      font-size: 1.5rem;
+      text-align: left;
+      line-height: 2;
+      color: cl(blue);
+      background-color: cl(white);
+			
+      @include mediaTAB {
+        top: 3.5vw;
+        left: 40vw;
+        padding: 5.5vw 4vw;
+        width: 35vw;
+        font-size: 1.5vw;
+      }
+      @include mediaSP {
+        display: none;
+        position: static;
+        margin: 0 auto;
+        padding: 12vw 7vw;
+        width: auto;
+        font-size: 4vw;
+        line-height: 1.5;
+      }
+      p {
+        margin-bottom: 25px;
+        @include mediaTAB {
+          margin-bottom: 1.8vw;
+        }
+        @include mediaSP {
+          margin-bottom: 25px;
+        }
+      }
+    }
+  }
+}

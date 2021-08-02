@@ -1,0 +1,88 @@
+#aboutus {
+  .inner {
+    padding: 100px 0 0;
+    font-size: 1.5rem;
+    overflow: hidden;
+    @include mediaTAB {
+      padding: 8vw 0 0;
+      font-size: 1.5vw;
+    }
+    @include mediaSP {
+      padding: 15vw 0 0;
+    }
+    h2 {
+      margin-bottom: 50px;
+      font-size: 3rem;
+      line-height: 1;
+      @include mediaTAB {
+        margin-bottom: 4vw;
+        font-size: 3vw;
+      }
+      @include mediaSP {
+        margin-bottom: 12vw;
+        font-size: 7vw;
+      }
+    }
+    .info {
+      margin: 0 auto;
+      width: 600px;
+      min-width: 410px;
+      text-align: left;
+      @include mediaTAB {
+        width: 45vw;
+        min-width: 410px;
+      }
+      @include mediaSP {
+        width: 75vw;
+        font-size: 3.5vw;
+      }
+      & dl:first-child {
+        float: left;
+      }
+      & dl:last-child {
+        float: right;
+        @include mediaSP {
+          margin-bottom: 8vw;
+        }
+      }
+      dl {
+        margin-bottom: 130px;
+        width: 280px;
+        @include mediaTAB {
+          margin-bottom: 10vw;
+          width: 20vw;
+        }
+        @include mediaSP {
+          margin-bottom: 0;
+          width: 100%;
+          font-size: 3.5vw;
+        }
+      }
+      dt {
+        display: inline-block;
+        margin-bottom: 8px;
+        padding: 0.2vw 1vw;
+        color: cl(white);
+        background-color: cl(blue);
+        @include mediaSP {
+          margin-bottom: 2vw;
+        }
+      }
+      dd {
+        margin-bottom: 2vw;
+        @include mediaSP {
+          margin-bottom: 5vw;
+        }
+      }
+    }
+    .map {
+      filter: grayscale(100%);
+      vertical-align: bottom;
+      iframe {
+        @include mediaSP {
+          height: 70vw;
+        }
+      }
+    }
+  }
+}

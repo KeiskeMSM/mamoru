@@ -1,0 +1,64 @@
+$colors: (
+  white: #ffffff,
+  yellow: #ffffc8,
+  green: #023432,
+  red: #c91422,
+  blue: #0f9dbd,
+  d-blue: #0f9cbd,
+  black: #000000,
+  grey: #ece8e3,
+);
+
+@function cl($key) {
+  @return map-get($colors, $key);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  text-align: center;
+  font-family: "Hiragino Kaku Gothic ProN", serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.ent-btn {
+  @include ent-btn;
+}
+
+.entry {
+  padding: 95px 0 125px;
+  background-image: url(../img/entry.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50%, 50%;
+  @include mediaTAB {
+    background-size: auto 100%;
+    background-position: 50%, 50%;
+  }
+  @include mediaSP {
+    padding: 25vw 0 23vw;
+    font-size: 5vw;
+  }
+  .entry-wrap {
+    p {
+      color: cl(white);
+      margin-bottom: 10px;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    a {
+      margin: 0 auto;
+      font-size: 2.5rem;
+      font-weight: bold;
+      @include mediaSP {
+        padding: 4vw 5vw;
+        font-size: 5vw;
+      }
+    }
+  }
+}
