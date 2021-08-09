@@ -5,7 +5,7 @@ html {
 
 body {
   text-align: center;
-  font-family: "Hiragino Kaku Gothic ProN", serif;
+  font-family: 'Noto Sans JP', sans-serif;
 }
 
 a {
@@ -310,7 +310,7 @@ a {
 
 @media print, screen and (max-width: 1280px) {
   #job-desc .inner .job-type {
-    padding-left: 50vw;
+    padding-left: 40vw;
     width: 80vw;
     height: 25vw;
     margin-bottom: 2vw;
