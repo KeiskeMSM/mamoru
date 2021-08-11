@@ -22,7 +22,7 @@ $(function () {
 
 $(function () {
   $('.faq-item').on('click', function () {
-    $(this).find('.detail').slideToggle();
-    $('.accordion').toggleClass('active');
+		$(this).find('.accordion').toggleClass('active');
+		$(this).find('.detail').slideToggle();
   });
 });

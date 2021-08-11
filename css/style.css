@@ -1175,6 +1175,6 @@ footer .copy {
 @media print, screen and (max-width: 1280px) {
   footer .copy {
     padding: 0.5vw 0;
-    font-size: 2vw;
+    font-size: 3vw;
   }
 }
